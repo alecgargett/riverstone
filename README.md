@@ -22,6 +22,8 @@ Roughstone and shinystone ideally will compile directly to the non-riverstone ta
 Other than returns, whitespace is not meaningful, since colons and keywords determine the beginnings and ends of blocks, but the compiler will enforce formatting.
 Formatting rules are stricter for shinystone, which uses indentation for delimiting most blocks but empty lines for public and private blocks. In roughstone, these are interchangable.
 
+#### roughstone
+
 ```roughstone
 "Hello, world!"
 ```
@@ -51,6 +53,8 @@ public:
   end main()
 end public
 ```
+
+#### shinystone
 
 ```shinystone
 public:
