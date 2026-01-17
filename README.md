@@ -79,9 +79,9 @@ end main()
 end public
 ```
 
-#### Output
+#### output
 
-```Output
+```output
 Hello, world!
 ```
 
@@ -114,11 +114,11 @@ Riverstone allows both symmetrical 1-based positional indexing and symmetrical 0
 
 1-based positional indexing:
 
-[1, 2, 3, ... , -3, -2, -1]
+`[1, 2, 3, ... , -3, -2, -1]`
 
 0-based vector indexing:
 
-[start, s+1, s+2, ... , e-2, e-1, end]
+`[start, s+1, s+2, ... , e-2, e-1, end]`
 
 The abbreviations `s` and `e` are equivalent to `start` and `end` in roughstone. In shinystone, there will be enforced standards on when to use each.
 
