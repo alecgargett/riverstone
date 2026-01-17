@@ -125,17 +125,17 @@ Riverstone allows both symmetrical 1-based positional indexing and symmetrical 0
 The abbreviations `s` and `e` are equivalent to `start` and `end` in roughstone. In shinystone, there will be enforced standards on when to use each.
 
 ```riverstone
-let list = ["a", "b", "c", "d"]
+define abcd_string_list :: ["a", "b", "c", "d"]
 
 // 1-based positional access
-print! list[1]           // "a"
-print! list[4]          // "d"
-print! list[-1]         // "d"
+print! abcd_string_list[1]          // "a"
+print! abcd_string_list[4]          // "d"
+print! abcd_string_list[-1]         // "d"
 
 // 0-based vector access
 print! abcd_string_list[first]     // "a"
 print! abcd_string_list[f + 1]     // "b"
-print! abcd_string_list[f + 2]    // "c"
+print! abcd_string_list[f + 2]     // "c"
 print! abcd_string_list[r - 1]     // "c"
 print! abcd_string_list[range]     // "d"
 
@@ -149,7 +149,7 @@ print! abcd_string_list[1:2]          // ["a", "b"]
 print! abcd_string_list[2:4]          // ["b", "c", "d"]
 print! abcd_string_list[1:-1]         // ["a", "b", "c", "d"]
 
-print! abcd_string_list[f..f+2]         // ["a", "b"]
+print! abcd_string_list[f..f+2]       // ["a", "b"]
 print! abcd_string_list[f+1..f+4]     // ["b", "c", "d"]
-print! abcd_string_list[f..r+1]         // ["a", "b", "c", "d", "e"]
+print! abcd_string_list[f..r+1]       // ["a", "b", "c", "d", "e"]
 ```
