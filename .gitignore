@@ -2,6 +2,7 @@
 logs/
 *.log
 *.tmp
+log.md
 
 # Environment variables
 .env
