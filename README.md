@@ -50,7 +50,7 @@ end main()
 
 ```roughstone
 public:
-  define main() -> Result(Ok, Err) ::
+  define main() :: Result(Ok, Err) 
     print! "Hello, world!"
   end main()
 end public
@@ -61,7 +61,7 @@ end public
 ```shinystone
 public:
 
-define main() -> Result(Ok, Err) ::
+define main() :: Result(Ok, Err)
   print! "Hello, world!"
 end main()
 
@@ -71,7 +71,7 @@ end public
 ```shinystone
 public:
 
-define main() -> Result(Ok: string, Err: string) ::
+define main() :: Result(Ok: string, Err: string)
   print! "Hello, world!"
   if Result:
     is Ok: "Result: Ok"
