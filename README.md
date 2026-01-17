@@ -1,12 +1,12 @@
 # riverstone
 
-Riverstone is a planned programming language that looks similar to Lua or Julia but with a feature-set based on Gleam and Roc, and a few unique features. 
+Riverstone is a planned programming language that looks most similar to Lua and Julia, but with a feature-set primarily based on Gleam and Roc, and with a few unique features.
 
 ## 1. Unique Features
 
 ### Targeting Gleam and Roc
 
-The first compiler will most likely target Gleam and the second most likely will target Roc, but compilers will hopefully eventually exist for Kotlin, F#, at least one low-level language and at least one scripting language (Lua or Python).
+The first compiler will most likely target Gleam and the second most likely will target Roc, but compilers will hopefully eventually exist for other languages such as Kotlin, Go, F# and Python.
 Likely not all programs that compile to one language will compile to all of the others.
 
 ### The "Roughstone/Shinystone" Subset Architecture
