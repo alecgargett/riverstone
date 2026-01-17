@@ -29,19 +29,19 @@ Formatting rules are stricter for shinystone, which uses indentation for delimit
 ```
 
 ```roughstone
-print! "Hello, world!"
+print!! "Hello, world!"
 ```
 
 ```roughstone
 define main() ::
-  print! "Hello, world!"
+  print!! "Hello, world!"
 end main()
 ```
 
 ```roughstone
 define main() ::
 
-print! "Hello, world!"
+print!! "Hello, world!"
 
 end main()
 ```
@@ -49,7 +49,7 @@ end main()
 ```roughstone
 public:
   define main() -> Result(Ok, Err) ::
-    print! "Hello, world!"
+    print!! "Hello, world!"
   end main()
 end public
 ```
@@ -60,7 +60,7 @@ end public
 public:
 
 define main() -> Result(Ok, Err) ::
-  print! "Hello, world!"
+  print!! "Hello, world!"
 end main()
 
 end public
@@ -70,7 +70,7 @@ end public
 public:
 
 define main() -> Result(Ok: string, Err: string) ::
-  print! "Hello, world!"
+  print!! "Hello, world!"
   if Result:
     is Ok: "Result: Ok"
     is Err: "Result: Err"
@@ -126,16 +126,16 @@ The abbreviations `s` and `e` are equivalent to `start` and `end` in roughstone.
 let list = ["a", "b", "c", "d"]
 
 // 1-based positional access
-print list[1]           // "a"
-print list[4]          // "d"
-print list[-1]         // "d"
+print! list[1]           // "a"
+print! list[4]          // "d"
+print! list[-1]         // "d"
 
 // 0-based vector access
-print list[start]     // "a"
-print list[s + 1]     // "b"
-print list[s + 2]    // "c"
-print list[e - 1]     // "c"
-print list[end]     // "d"
+print! list[start]     // "a"
+print! list[s + 1]     // "b"
+print! list[s + 2]    // "c"
+print! list[e - 1]     // "c"
+print! list[end]     // "d"
 
 ```
 Inclusive slicing uses `:` and exclusive slicing uses `..`. Using these for 1-based indexing and 0-based indexing respectively is enforced, which along with the different index syntax will reduce the risk of off-by-one errors.
@@ -143,13 +143,13 @@ Inclusive slicing uses `:` and exclusive slicing uses `..`. Using these for 1-ba
 ```riverstone
 define abcd_string_list :: ["a", "b", "c", "d"]
 
-print abcd_string_list[1:2]          // ["a", "b"]
-print abcd_string_list[2:4]          // ["b", "c", "d"]
-print abcd_string_list[1:-1]         // ["a", "b", "c", "d"]
+print! abcd_string_list[1:2]          // ["a", "b"]
+print! abcd_string_list[2:4]          // ["b", "c", "d"]
+print! abcd_string_list[1:-1]         // ["a", "b", "c", "d"]
 
-print abcd_string_list[s..s+2]         // ["a", "b"]
-print abcd_string_list[s+1..s+4]     // ["b", "c", "d"]
-print abcd_string_list[s..e+1]         // ["a", "b", "c", "d", "e"]
+print! abcd_string_list[s..s+2]         // ["a", "b"]
+print! abcd_string_list[s+1..s+4]     // ["b", "c", "d"]
+print! abcd_string_list[s..e+1]         // ["a", "b", "c", "d", "e"]
 ```
 
 Are there any inconsistencies? Suggested changes such as additional features?
