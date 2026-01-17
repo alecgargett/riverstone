@@ -6,7 +6,7 @@ Riverstone is a planned programming language that looks most similar to Julia, b
 
 ### Targeting Gleam and Roc
 
-The first compiler will most likely target Gleam and the second most likely will target Roc, but compilers will hopefully eventually exist for other languages such as Kotlin, Go, F# and Python.
+The first compiler will most likely target Gleam and the second most likely will target Roc, but compilers will hopefully eventually exist for other languages such as Kotlin, Go, F#, Dafny and Haxe.
 Likely not all programs that compile to one language will compile to all of the others.
 
 ### The "Roughstone/Shinystone" Subset Architecture
