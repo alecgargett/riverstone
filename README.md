@@ -17,11 +17,6 @@ Roughstone includes shinystone as a proper subset, so you can write shinystone i
 
 Roughstone and shinystone ideally will compile directly to the non-riverstone target language, and roughstone will also compile to shinystone. Shinystone will be designed such that Gleam and Shinystone can each transpile to the other. Ideally shinystone and at least one other target language such as Roc will each transpile to the other.
 
-### Ambiguity-Free Block Termination
-
-Other than returns, whitespace is not meaningful, since colons and keywords determine the beginnings and ends of blocks, but the compiler will enforce formatting.
-Formatting rules are stricter for shinystone, which uses indentation for delimiting most blocks but empty lines for public and private blocks. In roughstone, these are interchangable.
-
 #### roughstone
 
 ```roughstone
@@ -31,6 +26,13 @@ Formatting rules are stricter for shinystone, which uses indentation for delimit
 ```roughstone
 print! "Hello, world!"
 ```
+
+### Ambiguity-Free Block Termination
+
+Other than returns, whitespace is not meaningful, since colons and keywords determine the beginnings and ends of blocks, but the compiler will enforce formatting.
+Formatting rules are stricter for shinystone, which uses indentation for delimiting most blocks but empty lines for public and private blocks. In roughstone, these are interchangable.
+
+#### roughstone
 
 ```roughstone
 define main() ::
