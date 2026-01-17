@@ -1,6 +1,6 @@
 # riverstone
 
-Riverstone is a planned programming language that looks most similar to Lua and Julia, but with a feature-set primarily based on Gleam and Roc, and with a few unique features.
+Riverstone is a planned programming language that looks most similar to Julia, but with a feature-set primarily based on Gleam and Roc, and with a few unique features.
 
 ## 1. Unique Features
 
