@@ -1,0 +1,9 @@
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Environment variables
+.env
+
+# Dependency directories
