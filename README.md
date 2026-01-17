@@ -29,19 +29,19 @@ Formatting rules are stricter for shinystone, which uses indentation for delimit
 ```
 
 ```roughstone
-print!! "Hello, world!"
+print! "Hello, world!"
 ```
 
 ```roughstone
 define main() ::
-  print!! "Hello, world!"
+  print! "Hello, world!"
 end main()
 ```
 
 ```roughstone
 define main() ::
 
-print!! "Hello, world!"
+print! "Hello, world!"
 
 end main()
 ```
@@ -49,7 +49,7 @@ end main()
 ```roughstone
 public:
   define main() -> Result(Ok, Err) ::
-    print!! "Hello, world!"
+    print! "Hello, world!"
   end main()
 end public
 ```
@@ -60,7 +60,7 @@ end public
 public:
 
 define main() -> Result(Ok, Err) ::
-  print!! "Hello, world!"
+  print! "Hello, world!"
 end main()
 
 end public
@@ -70,7 +70,7 @@ end public
 public:
 
 define main() -> Result(Ok: string, Err: string) ::
-  print!! "Hello, world!"
+  print! "Hello, world!"
   if Result:
     is Ok: "Result: Ok"
     is Err: "Result: Err"
