@@ -133,11 +133,11 @@ print! list[4]          // "d"
 print! list[-1]         // "d"
 
 // 0-based vector access
-print! list[first]     // "a"
-print! list[f + 1]     // "b"
-print! list[f + 2]    // "c"
-print! list[r - 1]     // "c"
-print! list[last]     // "d"
+print! abcd_string_list[first]     // "a"
+print! abcd_string_list[f + 1]     // "b"
+print! abcd_string_list[f + 2]    // "c"
+print! abcd_string_list[r - 1]     // "c"
+print! abcd_string_list[range]     // "d"
 
 ```
 Inclusive slicing uses `:` and exclusive slicing uses `..`. Using these for 1-based indexing and 0-based indexing respectively is enforced, which along with the different index syntax will reduce the risk of off-by-one errors.
@@ -149,7 +149,7 @@ print! abcd_string_list[1:2]          // ["a", "b"]
 print! abcd_string_list[2:4]          // ["b", "c", "d"]
 print! abcd_string_list[1:-1]         // ["a", "b", "c", "d"]
 
-print! abcd_string_list[s..s+2]         // ["a", "b"]
-print! abcd_string_list[s+1..s+4]     // ["b", "c", "d"]
-print! abcd_string_list[s..e+1]         // ["a", "b", "c", "d", "e"]
+print! abcd_string_list[f..f+2]         // ["a", "b"]
+print! abcd_string_list[f+1..f+4]     // ["b", "c", "d"]
+print! abcd_string_list[f..r+1]         // ["a", "b", "c", "d", "e"]
 ```
