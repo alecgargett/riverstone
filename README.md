@@ -14,7 +14,7 @@ Riverstone is a superset of two subset languages: roughstone and shinystone.
 
 Roughstone includes shinystone as a proper subset, so you can write shinystone in a `.rough` file but not roughstone in a `.shiny` file, because roughstone also includes some things that aren't allowed in shinystone, Gleam or Roc, such as top level execution in the `main.rough` file.
 
-### roughstone
+#### roughstone
 
 ```roughstone
 "Hello, world!"
