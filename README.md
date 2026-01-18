@@ -52,7 +52,7 @@ Value names (excluding function names) in shinystone must contain the type, pref
 
 #### shinystone
 
-```shinystone
+ ```shinystone
 define otter_string :: "otter"
 define deer_string :: "deer"
 ```
@@ -76,9 +76,7 @@ new count_int <- prior count_int + 1 // new count_int == 1
 
 In shinystone, variable names must be suffixed with `_var` after the type name.
 
-#### shinystone
-
-```shinystone
+```riverstone
 declare chu_string_var <- "Pikachu"
 new chu_string_var <- "Raichu"
 
@@ -94,9 +92,7 @@ While `declare` and `new` handle variables that can be shadowed, Riverstone offe
 
 Unlike variables declared with `<-`, a local constant defined with `<:` cannot be shadowed or redeclared within the same scope.
 
-#### roughstone
-
-```roughstone
+```riverstone
 let pi_float <: 3.14159
 ```
 
