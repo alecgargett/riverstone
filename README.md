@@ -1,5 +1,7 @@
 Riverstone is a planned programming language that looks similar to Lua or Julia but with a feature-set based on Gleam and Roc, and a few unique features.
 
+It is still early in the syntax design stage and does not have a compiler.
+
 ## 1. Unique Features
 
 ### Targeting Gleam and Roc
