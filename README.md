@@ -8,6 +8,8 @@ It is still early in the syntax design stage and does not have a compiler.
 
 The first compiler will most likely target Gleam and the second most likely will target Roc, but compilers will hopefully eventually exist for binary, Kotlin, F#, at least one low-level language and at least one scripting language (Lua or Python). Likely not all programs that compile to one language will compile to all of the others.
 
+It's also possible that the compiler could target Javascript directly, and target Elixir, instead of targetting Gleam.
+
 ### The "Roughstone/Shinystone" Subset Architecture
 
 Riverstone is a superset of two subset languages: roughstone and shinystone.
