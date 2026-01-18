@@ -67,11 +67,11 @@ It is strongly encouraged to do this in roughstone too.
 #### roughstone
 
 ```roughstone
-declare chu_string <- "Pikachu"
-new chu_string <- "Raichu"
+declare chu <- "Pikachu"
+new chu <- "Raichu"
 
-declare count_int <- 0
-new count_int <- prior count_int + 1 // new count_int == 1
+declare count <- 0
+new count <- prior count + 1 // new count == 1
 ```
 
 In shinystone, variable names must be suffixed with `_var` after the type name.
