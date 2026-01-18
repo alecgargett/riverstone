@@ -39,6 +39,8 @@ Roughstone and shinystone ideally will compile directly to the non-riverstone ta
 
 Defining any global constant, including a function, uses both the "define" keyword and the "::" operator for easier readbility than other language protocols.
 
+#### roughstone
+
 ```roughstone
 define otter :: "otter"
 define deer :: "deer"
@@ -47,6 +49,8 @@ define deer :: "deer"
 ### Types in value names
 
 Value names (excluding function names) in shinystone must contain the type, prefixed by an underscore. This is used for explicit type checking, and increases readability when subsequently referenced. After type checking, these type annotations can be optionally stripped on compilation.
+
+#### shinystone
 
 ```shinystone
 define otter_string :: "otter"
@@ -60,6 +64,8 @@ It is strongly encouraged to do this in roughstone too.
 *   Declaring a new variable requires the `declare` keyword and an `<-` assignment.
 *   Shadowing an existing variable requires the `new` keyword and an `<-` assignment.
 
+#### roughstone
+
 ```roughstone
 declare chu_string <- "Pikachu"
 new chu_string <- "Raichu"
@@ -69,6 +75,8 @@ new count_int <- prior count_int + 1 // new count_int == 1
 ```
 
 In shinystone, variable names must be suffixed with `_var` after the type name.
+
+#### shinystone
 
 ```shinystone
 declare chu_string_var <- "Pikachu"
@@ -86,6 +94,8 @@ While `declare` and `new` handle variables that can be shadowed, Riverstone offe
 
 Unlike variables declared with `<-`, a local constant defined with `<:` cannot be shadowed or redeclared within the same scope.
 
+#### roughstone
+
 ```roughstone
 let pi_float <: 3.14159
 ```
@@ -99,6 +109,8 @@ Formatting rules are stricter for shinystone, which uses indentation for delimit
 In shinystone, `public:` blocks are not indented; instead, they are separated by empty lines, and must include an explicit `end public` (also separated by an empty line).
 
 **Roughstone Examples:**
+
+#### roughstone
 
 ```roughstone
 define main() ::
@@ -200,6 +212,8 @@ declare f_float_var <- 1.0 + 2.0
 ```
 
 ### Elixir-style string concatenation and pattern matching in function heads
+
+#### roughstone
 
 ```roughstone
 define execute("echo " <> message_string) ::
