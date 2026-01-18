@@ -4,7 +4,7 @@ It is still early in the syntax design stage and does not have a compiler.
 
 ## 1. Unique Features
 
-### Targeting Gleam and Roc
+### Targeting Roc and other languages
 
 The first compiler (if it gets made any time soon) will most likely be written in Zig and target Roc, but compilers will hopefully eventually exist to target Javascript, Python, Kotlin, F#, F*, Elixir, Go, D and binary. Likely not all programs that compile to one language will compile to all of the others.
 
