@@ -6,7 +6,7 @@ It is still early in the syntax design stage and does not have a compiler.
 
 ### Targeting Roc and other languages
 
-The first compiler (if it gets made any time soon) will most likely be written in Zig and target Roc, but compilers will hopefully eventually exist to target Javascript, Python/Xonsh, Kotlin, C# or F#, F*, Elixir, Go, D and binary. Likely not all programs that compile to one language will compile to all of the others.
+The first compiler (if it gets made any time soon) will most likely be written in Zig and target Roc, but compilers will hopefully eventually exist to target some of the following too: Gleam or Javascript and Elixir, Python or Xonsh, Kotlin, C# or F#, F*, Go, D and binary. Likely not all programs that compile to one language will compile to all of the others.
 
 It's also possible that the compiler could target Javascript directly, and target Elixir, instead of targetting Gleam.
 
