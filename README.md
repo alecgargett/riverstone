@@ -1,4 +1,4 @@
-Riverstone is a planned programming language that looks similar to Lua or Julia but with a feature-set based on Gleam and Roc, and a few unique features.
+Riverstone is a planned programming language that looks similar to Lua or Julia but with a safe, functional design based on Gleam and Roc, and a few unique features.
 
 It is still early in the syntax design stage and does not have a compiler.
 
@@ -6,7 +6,7 @@ It is still early in the syntax design stage and does not have a compiler.
 
 ### Targeting Roc and other languages
 
-The first compiler (if it gets made any time soon) will most likely be written in Zig and target Roc, but compilers will hopefully eventually exist to target Javascript, Python/Xonsh, Kotlin, F#, F*, Elixir, Go, D and binary. Likely not all programs that compile to one language will compile to all of the others.
+The first compiler (if it gets made any time soon) will most likely be written in Zig and target Roc, but compilers will hopefully eventually exist to target Javascript, Python/Xonsh, Kotlin, C# or F#, F*, Elixir, Go, D and binary. Likely not all programs that compile to one language will compile to all of the others.
 
 It's also possible that the compiler could target Javascript directly, and target Elixir, instead of targetting Gleam.
 
