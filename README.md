@@ -41,62 +41,51 @@ Roughstone and shinystone ideally will compile directly to the non-riverstone ta
 
 Defining any global constant, including a function, uses both the "define" keyword and the "::" operator for easier readbility than other language protocols.
 
-#### roughstone
+#### riverstone
 
-```roughstone
-define otter :: "otter"
-define deer :: "deer"
+```riverstone
+define OTTER_STRING :: "otter"
+define DEER_STRING :: "deer"
 ```
 
 ### Types in value names
 
 Value names (excluding function names) in shinystone must contain the type, prefixed by an underscore. This is used for explicit type checking, and increases readability when subsequently referenced. After type checking, these type annotations can be optionally stripped on compilation.
 
-#### shinystone
+Non-function global constant names in shinystone must use all caps.
 
- ```shinystone
-define otter_string :: "otter"
-define deer_string :: "deer"
-```
-
-It is strongly encouraged to do this in roughstone too.
+It is encouraged to do this in roughstone too.
 
 ### Explicit variable declaration, naming and shadowing with `declare`, `_var`, `new` and `<-`
 
 *   Declaring a new variable requires the `declare` keyword and an `<-` assignment.
 *   Shadowing an existing variable requires the `new` keyword and an `<-` assignment.
 
-#### roughstone
-
-```roughstone
-declare chu <- "Pikachu"
-new chu <- "Raichu"
-
-declare count <- 0
-new count <- prior count + 1 // new count == 1
-```
-
-In shinystone, variable names must be suffixed with `_var` after the type name.
+#### riverstone
 
 ```riverstone
-declare chu_string_var <- "Pikachu"
-new chu_string_var <- "Raichu"
+declare chu_string <- "Pikachu"
+new chu_string <- "Raichu"
 
-declare count_int_var <- 0
-new count_int_var <- prior count_int_var + 1 // new count_int_var == 1
+declare count_int <- 0
+new count_int <- prior count_int + 1 // new count_int == 1
 ```
+
+In shinystone, variable names must use lower case.
 
 Using `<-` reduces ambiguity and reduces operator overloading.
 
-### Local Constants with `let` and `<:`
+### Local Temporary Constants with `stipulate` and `<:`
 
-While `declare` and `new` handle variables that can be shadowed, Riverstone offers `let` for defining strictly immutable local constants. These are bound using the `<:` operator.
+While `declare` and `new` handle variables that can be shadowed, Riverstone offers `stipulate` for defining strictly immutable local temporary constants. These are bound using the `<:` operator.
 
-Unlike variables declared with `<-`, a local constant defined with `<:` cannot be shadowed or redeclared within the same scope.
+Unlike variables declared with `<-`, a local temporary constant defined with `<:` cannot be shadowed or redeclared within the same scope.
 
 ```riverstone
-let pi_float <: 3.14159
+stipulate Paralysis_Float <: 0.25
 ```
+
+In shinystone, local temporary constant names must capitalise the first letter of each word and not every letter.
 
 ### Ambiguity-Free Block Termination
 
@@ -202,7 +191,7 @@ print! abcd_stringlist[s..e+1]       // ["a", "b", "c", "d"]
 
 ### Unified Arithmetic Operators
 
-Unlike in Gleam, operator overloading exists in riverstone, but it is restricted to doing math with `+`, `-`, and `*` operators, which are used for both integers and floats. Mixing `int` and `float` types in a single operation remains prohibited.
+Unlike in Gleam, the are some overloaded operators in riverstone: `+`, `-`, and `*` operators, which are used for both integers and floats, but can only be used for this. Mixing `int` and `float` types in a single operation remains prohibited. Additional operator overloading is prohibited.
 
 ```riverstone
 declare i_int_var <- 1 + 2
