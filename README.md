@@ -191,7 +191,7 @@ print! abcd_stringlist[s..e+1]       // ["a", "b", "c", "d"]
 
 ### Unified Arithmetic Operators
 
-Unlike in Gleam, the are some overloaded operators in riverstone: `+`, `-`, and `*` operators, which are used for both integers and floats, but can only be used for this. Mixing `int` and `float` types in a single operation remains prohibited. Additional operator overloading is prohibited.
+Unlike in Gleam, the are some overloaded operators in riverstone, but it is restricted to three: `+`, `-`, and `*` operators, which are used for both integers and floats, but can only be used for this. Mixing `int` and `float` types in a single operation remains prohibited. Additional operator overloading is prohibited.
 
 ```riverstone
 declare i_int_var <- 1 + 2
